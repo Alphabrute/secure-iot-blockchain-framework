@@ -27,6 +27,7 @@ Isolation Forest ML Model
 Ethereum Ganache Blockchain
         ↓
 Cloudflare Tunnel / ngrok for Global Access
+```
 
 ## Project Flow
 Raspberry Pi reads temperature and humidity from the DHT11 sensor.
@@ -36,6 +37,7 @@ Relay ON/OFF actions are controlled through the web UI.
 If the sensor data is normal, a SHA-256 hash is generated.
 The hash, device ID, and ML status are stored on Ganache blockchain using a Solidity smart contract.
 If anomaly is detected, the action/data is not treated as trusted.
+
 ## Technologies Used
 Raspberry Pi OS
 Python
@@ -66,8 +68,9 @@ ML status
 Blockchain timestamp
 
 ## Security Concept
-The blockchain layer provides tamper-proof logging and traceability. The ML layer detects abnormal sensor readings before data/action logging. The Raspberry Pi works as an edge security gateway for IoT devices.
+The blockchain layer provides tamper-proof logging and traceability. 
+The ML layer detects abnormal sensor readings before data/action logging. 
+The Raspberry Pi works as an edge security gateway for IoT devices.
 
 ## Author
-
 Aditya Siwach
