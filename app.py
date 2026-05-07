@@ -34,14 +34,12 @@ model = joblib.load("isolation_model.pkl")
 # BLOCKCHAIN SETUP
 # =========================
 
-# Since Ganache is running on your PC, use PC IP address here
-# Your PC IP from screenshot: 192.168.29.25
-GANACHE_URL = "http://192.168.29.25:7545"
+GANACHE_URL = "http://replace_withIP:7545"
 
 w3 = Web3(Web3.HTTPProvider(GANACHE_URL))
 
 # Paste your deployed contract address here
-contract_address = "0x9a500865514401818924A9E28C625C1578f9297C"
+contract_address = "Put_your_Contract_address"
 contract_address = Web3.to_checksum_address(contract_address)
 
 # Load ABI from abi.txt
